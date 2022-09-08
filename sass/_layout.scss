@@ -1,0 +1,55 @@
+.header {
+  font-family: 'Poppins', sans-serif;
+  background-color: $color-neutral-1;
+  background-image: url('../images/bg-hero-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features {
+  padding: 5rem;
+  padding-bottom: 0;
+  margin-bottom: 25rem;
+}
+
+.footer {
+  background-color: $color-neutral-2;
+  color: $color-white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: -5rem;
+}
+
+.cta {
+  background-color: $color-white;
+  color: $color-black;
+  width: 60%;
+  height: 35vh;
+  padding: 5rem;
+  position: absolute;
+  top: -18%;
+  left: 25%;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: .2rem .2rem .5rem rgba($color-black, .1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__btn {
+    display: inline-block;
+    padding: 1.5rem 5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: $color-white;
+    font-weight: 600;
+  }
+}
+
+.attribution {
+  margin: 0 auto;
+  width: 50%;
+}

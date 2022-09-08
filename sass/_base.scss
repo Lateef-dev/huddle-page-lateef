@@ -1,0 +1,37 @@
+// COLORS
+
+$color-primary: hsl(322, 100%, 66%);
+$color-neutral-1: hsl(193, 100%, 96%);
+$color-neutral-2: hsl(192, 100%, 9%);
+$color-neutral-3: hsl(208, 11%, 55%);
+
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
+
+$bp-largest: 75em;
+$bp-large : 56.25em;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    position: relative;
+    height: 100vh;
+}
+
+@media only screen and (max-width:$bp-largest) {}
