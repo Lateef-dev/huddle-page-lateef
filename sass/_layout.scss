@@ -10,13 +10,17 @@
   padding: 5rem;
   padding-bottom: 0;
   margin-bottom: 25rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem;
+  }
 }
 
 .footer {
   background-color: $color-neutral-2;
   color: $color-white;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin-top: -5rem;
 }
@@ -52,4 +56,59 @@
 .attribution {
   margin: 0 auto;
   width: 50%;
+}
+
+@media only screen and (max-width:$bp-large) {
+  .cta {
+    width: 65%;
+    height: 40vh;
+    top: -25%;
+
+    &__btn {
+      display: inline-block;
+      padding: 1.5rem 5rem;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+@media only screen and (max-width:$bp-medium) {
+  .cta {
+    width: 70%;
+    top: -30%;
+    left: 22%;
+
+    &__btn {
+      padding: 1.5rem 5rem;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+@media only screen and (max-width:$bp-small) {
+  .cta {
+    width: 90%;
+    height: 40vh;
+    top: -18%;
+    left: 5%;
+  }
+}
+
+@media only screen and (max-width:$bp-phone) {
+  .cta {
+    width: 95%;
+    height: 30vh;
+    top: -13%;
+    left: 2%;
+    padding: 1rem;
+
+
+    &__btn {
+      padding: 1rem 5rem;
+      border: none;
+      font-weight: 600;
+    }
+  }
 }

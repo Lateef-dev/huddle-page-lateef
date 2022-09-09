@@ -5,7 +5,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 3rem;
+        padding-bottom: 3rem;
 
         &--logo {
             width: 15rem;
@@ -48,6 +48,102 @@
 
         &--btn {
             align-self: flex-start;
+        }
+    }
+
+    @media only screen and (max-width:$bp-medium) {
+        &__nav {
+            padding-bottom: 2rem;
+
+            &--logo {
+                width: 12rem;
+            }
+
+            &--btn {
+                padding: 1rem 3.5rem;
+            }
+        }
+
+        &__content {
+            &--text {
+                max-width: 50%;
+            }
+
+            &--img {
+                max-width: 32rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        &__nav {
+            padding-bottom: 1rem;
+
+            &--logo {
+                width: 10rem;
+            }
+
+            &--btn {
+                padding: 1rem 3.5rem;
+            }
+        }
+
+        &__content {
+            &--text {
+                max-width: 50%;
+            }
+
+            &--img {
+                max-width: 45%;
+            }
+        }
+    }
+
+    @media only screen and (max-width:$bp-phone) {
+        padding: 0;
+
+        &__nav {
+            margin-bottom: 5rem;
+            padding: 1rem;
+
+            &--logo {
+                width: 10rem;
+            }
+
+            &--btn {
+                padding: 1rem 2rem;
+            }
+        }
+
+        &__content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &--text {
+                width: 60%;
+                max-width: 100%;
+                margin-right: 0;
+                text-align: center;
+                flex-direction: column;
+
+
+                &__1 {
+                    font-size: clamp(1.8rem, (.4rem + 8vw), 2.5rem);
+                }
+            }
+
+            &--img {
+                max-width: 100%;
+                width: 70%;
+                margin-bottom: 5rem;
+            }
+
+            &--btn {
+                width: 100%;
+                align-self: center;
+                margin-bottom: 5rem;
+            }
         }
     }
 }

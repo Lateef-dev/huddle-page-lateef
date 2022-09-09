@@ -10,7 +10,9 @@ $color-black: hsl(0, 0%, 0%);
 
 $bp-largest: 75em;
 $bp-large : 56.25em;
-
+$bp-medium: 45em;
+$bp-small: 37.5em;
+$bp-phone: 31.25em;
 
 *,
 *::before,
@@ -34,4 +36,34 @@ body {
     height: 100vh;
 }
 
-@media only screen and (max-width:$bp-largest) {}
+@media only screen and (max-width:$bp-large) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width:$bp-medium) {
+    html {
+        font-size: 56%;
+    }
+}
+
+@media only screen and (max-width:$bp-small) {
+    html {
+        font-size: 54%;
+    }
+
+    body {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:$bp-phone) {
+    html {
+        font-size: 58%;
+    }
+
+    body {
+        font-size: 1.6rem;
+    }
+}
